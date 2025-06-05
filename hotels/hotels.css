@@ -1,0 +1,342 @@
+/* O CSS da busca de hotéis será inserido aqui */ 
+body {
+    background: #e5e5e5;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+/* Header Styles */
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.header-nav a:hover {
+    color: #666;
+}
+
+.header-nav a.active {
+    color: #a48b8b;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn-login {
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.btn-login:hover {
+    background: #f5f5f5;
+}
+
+.btn-signup {
+    background: #a48b8b;
+    color: #fff;
+}
+
+.btn-signup:hover {
+    background: #8b7575;
+}
+
+.header-user-icon {
+    width: 32px;
+    height: 32px;
+    background: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #666;
+}
+
+/* Footer Styles */
+footer {
+    background: #fff;
+    padding: 40px 0;
+    border-top: 1px solid #eee;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-logo-section {
+    flex: 1;
+    max-width: 300px;
+}
+
+.footer-logo-img {
+    height: 40px;
+    margin-bottom: 16px;
+}
+
+.logo-subtitle {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-social-icons a {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.footer-social-icons a:hover {
+    background: #eee;
+}
+
+.footer-links-section {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-column-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 8px;
+}
+
+.footer-column a {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.footer-column a:hover {
+    color: #333;
+}
+
+/* Hotels Specific Styles */
+.hotels-header {
+    background: #fff;
+    padding: 18px 0 0 0;
+    border-bottom: 1px solid #d3d3d3;
+}
+.hotels-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 0 0 0;
+}
+.hotels-title {
+    font-size: 2.6rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+}
+.hotels-subtitle {
+    text-align: center;
+    color: #444;
+    font-size: 1.08rem;
+    margin-bottom: 32px;
+}
+.hotels-search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+.hotels-search-bar input {
+    width: 400px;
+    max-width: 90vw;
+    padding: 10px 16px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 1.1rem;
+}
+.hotels-filters {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 32px;
+}
+.hotels-filters select, .hotels-filters input {
+    padding: 10px 14px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 1rem;
+    min-width: 180px;
+    background: #fff;
+}
+.hotels-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 28px;
+    margin-bottom: 40px;
+}
+.hotel-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 0;
+    display: flex;
+    gap: 0;
+    overflow: hidden;
+    border: 2px dashed #d3d3d3;
+    min-height: 180px;
+}
+.hotel-card-img {
+    width: 160px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+    margin: 18px 0 18px 18px;
+}
+.hotel-card-content {
+    flex: 1;
+    padding: 18px 18px 18px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hotel-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.hotel-card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+.hotel-card-location {
+    font-size: 0.98rem;
+    color: #444;
+    margin-bottom: 6px;
+}
+.hotel-card-rating {
+    background: #a48b8b;
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 2px 10px;
+    margin-left: 8px;
+    display: inline-block;
+}
+.hotel-card-tags {
+    margin-bottom: 10px;
+}
+.hotel-card-tag {
+    display: inline-block;
+    background: #cbbaba;
+    color: #5a4343;
+    font-size: 0.93rem;
+    border-radius: 8px;
+    padding: 2px 10px;
+    margin-right: 6px;
+    margin-bottom: 2px;
+}
+.hotel-card-price {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #222;
+}
+.hotel-card-price-desc {
+    font-size: 0.95rem;
+    color: #888;
+    margin-left: 4px;
+}
+@media (max-width: 900px) {
+    .hotels-list {
+        grid-template-columns: 1fr;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer-logo-section {
+        max-width: 100%;
+    }
+    .footer-links-section {
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+@media (max-width: 600px) {
+    .hotels-header {
+        padding: 10px 0 0 0;
+    }
+    .hotels-title {
+        font-size: 2rem;
+    }
+    .hotels-search-bar input {
+        width: 98vw;
+    }
+    .hotels-filters {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hotel-card {
+        flex-direction: column;
+        min-height: unset;
+    }
+    .hotel-card-img {
+        width: 100%;
+        height: 160px;
+        margin: 0;
+        border-radius: 10px 10px 0 0;
+    }
+    .hotel-card-content {
+        padding: 14px 12px;
+    }
+    .header-nav {
+        display: none;
+    }
+} 

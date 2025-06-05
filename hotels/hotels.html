@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de Hotéis - Staysplore</title>
+    <link rel="stylesheet" href="hotels.css">
+</head>
+<body>
+    <header class="hotels-header">
+        <div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;">
+            <img src="../images/LOGO.png" alt="Logo Staysplore" style="height:38px;">
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="hotels.html" class="active">Hotéis</a></li>
+                    <li><a href="#">Atrações</a></li>
+                    <li><a href="#">Roteiros</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="../sign-in/login.html" class="btn btn-login">Login</a>
+                <a href="../sign-up/register.html" class="btn btn-signup">Cadastrar-se</a>
+                <div class="header-user-icon"><span>U</span></div>
+            </div>
+        </div>
+    </header>
+    <main class="hotels-main">
+        <h1 class="hotels-title">Busca de Hotéis</h1>
+        <div class="hotels-subtitle">O hotel que mais se encaixa no seu sonho</div>
+        <div class="hotels-search-bar">
+            <input type="text" placeholder="Buscar Hotéis">
+        </div>
+        <div class="hotels-filters">
+            <select><option>Todas as localizações</option></select>
+            <select><option>Qualquer preço</option></select>
+            <select><option>Qualquer avaliação</option></select>
+        </div>
+        <hr style="margin: 32px 0 32px 0; border: none; border-top: 2px solid #bdbdbd;">
+        <div class="hotels-list">
+            <div class="hotel-card">
+                <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80" class="hotel-card-img" alt="Luxury Resort">
+                <div class="hotel-card-content">
+                    <div class="hotel-card-header">
+                        <div>
+                            <div class="hotel-card-title">Luxury Resort</div>
+                            <div class="hotel-card-location">Rio de Janeiro</div>
+                        </div>
+                        <div class="hotel-card-rating">4.7</div>
+                    </div>
+                    <div class="hotel-card-tags">
+                        <span class="hotel-card-tag">Piscina</span>
+                        <span class="hotel-card-tag">Spa</span>
+                        <span class="hotel-card-tag">Restaurante</span>
+                    </div>
+                    <div>
+                        <span class="hotel-card-price">R$ 250</span>
+                        <span class="hotel-card-price-desc">Por noite</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" class="hotel-card-img" alt="Andrade Guaira">
+                <div class="hotel-card-content">
+                    <div class="hotel-card-header">
+                        <div>
+                            <div class="hotel-card-title">Andrade Guaira</div>
+                            <div class="hotel-card-location">Curitiba</div>
+                        </div>
+                        <div class="hotel-card-rating">4.0</div>
+                    </div>
+                    <div class="hotel-card-tags">
+                        <span class="hotel-card-tag">Trabalho</span>
+                        <span class="hotel-card-tag">Wi-Fi</span>
+                        <span class="hotel-card-tag">Aceita pets</span>
+                    </div>
+                    <div>
+                        <span class="hotel-card-price">R$ 144</span>
+                        <span class="hotel-card-price-desc">Por noite</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" class="hotel-card-img" alt="Andrade Express">
+                <div class="hotel-card-content">
+                    <div class="hotel-card-header">
+                        <div>
+                            <div class="hotel-card-title">Andrade Express</div>
+                            <div class="hotel-card-location">Salvador</div>
+                        </div>
+                        <div class="hotel-card-rating">4.5</div>
+                    </div>
+                    <div class="hotel-card-tags">
+                        <span class="hotel-card-tag">Estacionamento</span>
+                        <span class="hotel-card-tag">Café da manhã</span>
+                    </div>
+                    <div>
+                        <span class="hotel-card-price">R$ 276</span>
+                        <span class="hotel-card-price-desc">Por noite</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" class="hotel-card-img" alt="Soneca Plaza Hotel">
+                <div class="hotel-card-content">
+                    <div class="hotel-card-header">
+                        <div>
+                            <div class="hotel-card-title">Soneca Plaza Hotel</div>
+                            <div class="hotel-card-location">São Paulo</div>
+                        </div>
+                        <div class="hotel-card-rating">3.9</div>
+                    </div>
+                    <div class="hotel-card-tags">
+                        <span class="hotel-card-tag">Estacionamento</span>
+                        <span class="hotel-card-tag">Restaurante</span>
+                    </div>
+                    <div>
+                        <span class="hotel-card-price">R$ 194</span>
+                        <span class="hotel-card-price-desc">Por noite</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer style="margin-top:40px;">
+        <div class="footer-content">
+            <div class="footer-logo-section">
+                <img src="../images/LOGO.png" alt="Logo Staysplore Rodapé" class="footer-logo-img" onerror="this.style.display='none'; this.parentElement.insertAdjacentHTML('afterbegin', '<div style=\'font-size:24px; font-weight:bold; color:black; margin-bottom:15px;\'>STAYSPLORE</div>');">
+                <div class="logo-subtitle">
+                    WWW.STAYSPLORE.COM.BR <br/>
+                    SEU MELHOR AMIGO EM VIAGENS!
+                </div>
+                <div class="footer-social-icons">
+                    <a href="#" class="footer-icon-f" aria-label="Facebook"></a>
+                    <a href="#" class="footer-icon-in" aria-label="LinkedIn"></a>
+                    <a href="#" class="footer-icon-yt" aria-label="YouTube"></a>
+                    <a href="#" class="footer-icon-ig" aria-label="Instagram"></a>
+                </div>
+            </div>
+            <div class="footer-links-section">
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Início</h4>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Início</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Contato</h4>
+                    <ul>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Telefone</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Marcar horário</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Outros</h4>
+                    <ul>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Trabalhe conosco</a></li>
+                        <li><a href="#">Vagas</a></li>
+                        <li><a href="#">Admin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
