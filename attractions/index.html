@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atrações - Staysplore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="header-logo">
+            <img src="../images/LOGO.png" alt="Staysplore" onerror="this.style.display='none'; this.parentElement.innerHTML = 'STAYSPLORE';">
+        </a>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../hotels/hotels.html">Hotéis</a></li>
+                <li><a href="index.html" class="active">Atrações</a></li>
+                <li><a href="../itineraries/index.html">Roteiros</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="../sign-in/login.html" class="btn btn-login">Login</a>
+            <a href="../sign-up/register.html" class="btn btn-signup">Cadastrar-se</a>
+            <div class="header-user-icon">
+                <span>U</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="page-title">
+            <h1>Atrações Turísticas</h1>
+            <p>Descubra os melhores lugares para visitar em cada destino</p>
+        </div>
+
+        <section class="search-section">
+            <h2>Buscar Atrações</h2>
+            <form class="search-form" id="attractionSearchForm">
+                <div class="form-group">
+                    <label for="destination">Destino</label>
+                    <input type="text" id="destination" name="destination" placeholder="Digite o destino" required>
+                </div>
+                <div class="form-group">
+                    <label for="category">Categoria</label>
+                    <select id="category" name="category" required>
+                        <option value="">Selecione uma categoria</option>
+                        <option value="cultural">Cultural</option>
+                        <option value="natureza">Natureza</option>
+                        <option value="gastronomia">Gastronomia</option>
+                        <option value="aventura">Aventura</option>
+                        <option value="shopping">Shopping</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="price">Faixa de Preço</label>
+                    <select id="price" name="price" required>
+                        <option value="">Selecione a faixa</option>
+                        <option value="gratis">Grátis</option>
+                        <option value="baixo">Até R$ 50</option>
+                        <option value="medio">R$ 50 - R$ 150</option>
+                        <option value="alto">Acima de R$ 150</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Data da Visita</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="people">Número de Pessoas</label>
+                    <input type="number" id="people" name="people" min="1" max="20" placeholder="Quantidade" required>
+                </div>
+                <button type="submit" class="search-btn">Buscar Atrações</button>
+            </form>
+        </section>
+
+        <section class="attractions-grid">
+            <article class="attraction-card">
+                <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=600&q=80" alt="Cristo Redentor">
+                <div class="attraction-content">
+                    <h3>Cristo Redentor</h3>
+                    <p>Uma das Sete Maravilhas do Mundo Moderno, oferece vistas deslumbrantes do Rio de Janeiro.</p>
+                    <div class="attraction-tags">
+                        <span class="attraction-tag">Cultural</span>
+                        <span class="attraction-tag">Vista Panorâmica</span>
+                        <span class="attraction-tag">Religioso</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="attraction-card">
+                <img src="https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f?auto=format&fit=crop&w=600&q=80" alt="Pão de Açúcar">
+                <div class="attraction-content">
+                    <h3>Pão de Açúcar</h3>
+                    <p>Teleférico que leva aos morros Urca e Pão de Açúcar, com vistas espetaculares da Baía de Guanabara.</p>
+                    <div class="attraction-tags">
+                        <span class="attraction-tag">Natureza</span>
+                        <span class="attraction-tag">Teleférico</span>
+                        <span class="attraction-tag">Vista</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="attraction-card">
+                <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=600&q=80" alt="Copacabana">
+                <div class="attraction-content">
+                    <h3>Praia de Copacabana</h3>
+                    <p>Uma das praias mais famosas do mundo, com 4km de extensão e calçadão de pedras portuguesas.</p>
+                    <div class="attraction-tags">
+                        <span class="attraction-tag">Praia</span>
+                        <span class="attraction-tag">Gratuito</span>
+                        <span class="attraction-tag">Esporte</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="schedule-section">
+            <h2>Horários de Funcionamento</h2>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Atração</th>
+                        <th>Segunda a Sexta</th>
+                        <th>Sábado</th>
+                        <th>Domingo</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cristo Redentor</td>
+                        <td>08:00 - 19:00</td>
+                        <td>08:00 - 19:00</td>
+                        <td>08:00 - 19:00</td>
+                        <td>R$ 75,00</td>
+                    </tr>
+                    <tr>
+                        <td>Pão de Açúcar</td>
+                        <td>08:30 - 21:00</td>
+                        <td>08:30 - 21:00</td>
+                        <td>08:30 - 21:00</td>
+                        <td>R$ 120,00</td>
+                    </tr>
+                    <tr>
+                        <td>Copacabana</td>
+                        <td>24h</td>
+                        <td>24h</td>
+                        <td>24h</td>
+                        <td>Grátis</td>
+                    </tr>
+                    <tr>
+                        <td>Jardim Botânico</td>
+                        <td>08:00 - 17:00</td>
+                        <td>08:00 - 17:00</td>
+                        <td>08:00 - 17:00</td>
+                        <td>R$ 15,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="attractions-list">
+            <h2>Lista Completa de Atrações</h2>
+            <ul>
+                <li>
+                    <div class="attraction-info">
+                        <h4>Museu de Arte Moderna (MAM)</h4>
+                        <p>Museu com exposições de arte moderna e contemporânea brasileira</p>
+                    </div>
+                    <div class="attraction-price">R$ 20,00</div>
+                </li>
+                <li>
+                    <div class="attraction-info">
+                        <h4>Parque Lage</h4>
+                        <p>Parque público com jardins históricos e escola de artes visuais</p>
+                    </div>
+                    <div class="attraction-price">Grátis</div>
+                </li>
+                <li>
+                    <div class="attraction-info">
+                        <h4>Escadaria Selarón</h4>
+                        <p>Escadaria colorida decorada com azulejos de todo o mundo</p>
+                    </div>
+                    <div class="attraction-price">Grátis</div>
+                </li>
+                <li>
+                    <div class="attraction-info">
+                        <h4>Teatro Municipal</h4>
+                        <p>Teatro histórico com arquitetura neoclássica e programação cultural</p>
+                    </div>
+                    <div class="attraction-price">R$ 50,00</div>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo-section">
+                <img src="../images/LOGO.png" alt="Logo Staysplore Rodapé" class="footer-logo-img" onerror="this.style.display='none'; this.parentElement.insertAdjacentHTML('afterbegin', '<div style=\'font-size:24px; font-weight:bold; color:black; margin-bottom:15px;\'>STAYSPLORE</div>');">
+                <div class="logo-subtitle-text">
+                    WWW.STAYSPLORE.COM.BR <br/>
+                    SEU MELHOR AMIGO EM VIAGENS!
+                </div>
+                <div class="footer-social-icons">
+                    <a href="#" class="footer-icon-f" aria-label="Facebook"></a>
+                    <a href="#" class="footer-icon-in" aria-label="LinkedIn"></a>
+                    <a href="#" class="footer-icon-yt" aria-label="YouTube"></a>
+                    <a href="#" class="footer-icon-ig" aria-label="Instagram"></a>
+                </div>
+            </div>
+            <div class="footer-links-section">
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Contato</h4>
+                    <ul>
+                        <li><a href="../contact/index.html">Email</a></li>
+                        <li><a href="../contact/index.html">Telefone</a></li>
+                        <li><a href="../contact/index.html">Instagram</a></li>
+                        <li><a href="../contact/index.html">Marcar horário</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Outros</h4>
+                    <ul>
+                        <li><a href="../about/index.html">Sobre nós</a></li>
+                        <li><a href="../about/index.html">Trabalhe conosco</a></li>
+                        <li><a href="../about/index.html">Vagas</a></li>
+                        <li><a href="../about/index.html">Admin</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Início</h4>
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="../hotels/hotels.html">Hotéis</a></li>
+                        <li><a href="index.html">Atrações</a></li>
+                        <li><a href="../itineraries/index.html">Roteiros</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Validação do formulário de busca
+        document.getElementById('attractionSearchForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const destination = document.getElementById('destination').value.trim();
+            const category = document.getElementById('category').value;
+            const price = document.getElementById('price').value;
+            const date = document.getElementById('date').value;
+            const people = document.getElementById('people').value;
+            
+            // Validação de campos vazios
+            if (!destination) {
+                alert('Por favor, preencha o campo Destino');
+                document.getElementById('destination').focus();
+                return;
+            }
+            
+            if (!category) {
+                alert('Por favor, selecione uma categoria');
+                document.getElementById('category').focus();
+                return;
+            }
+            
+            if (!price) {
+                alert('Por favor, selecione uma faixa de preço');
+                document.getElementById('price').focus();
+                return;
+            }
+            
+            if (!date) {
+                alert('Por favor, selecione uma data');
+                document.getElementById('date').focus();
+                return;
+            }
+            
+            if (!people || people < 1 || people > 20) {
+                alert('Por favor, insira um número válido de pessoas (1-20)');
+                document.getElementById('people').focus();
+                return;
+            }
+            
+            // Se todos os campos estão preenchidos, simula o envio
+            alert('Busca realizada com sucesso! Encontramos 15 atrações para você.');
+        });
+    </script>
+</body>
+</html> 

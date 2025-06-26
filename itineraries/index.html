@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roteiros - Staysplore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="header-logo">
+            <img src="../images/LOGO.png" alt="Staysplore" onerror="this.style.display='none'; this.parentElement.innerHTML = 'STAYSPLORE';">
+        </a>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../hotels/hotels.html">Hotéis</a></li>
+                <li><a href="../attractions/index.html">Atrações</a></li>
+                <li><a href="index.html" class="active">Roteiros</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="../sign-in/login.html" class="btn btn-login">Login</a>
+            <a href="../sign-up/register.html" class="btn btn-signup">Cadastrar-se</a>
+            <div class="header-user-icon">
+                <span>U</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="page-title">
+            <h1>Criar e Explorar Roteiros</h1>
+            <p>Planeje sua viagem perfeita com roteiros personalizados</p>
+        </div>
+
+        <section class="create-itinerary-section">
+            <h2>Criar Novo Roteiro</h2>
+            <form class="itinerary-form" id="itineraryForm">
+                <div class="form-group">
+                    <label for="itineraryName">Nome do Roteiro</label>
+                    <input type="text" id="itineraryName" name="itineraryName" placeholder="Ex: Roteiro Rio de Janeiro 3 dias" required>
+                </div>
+                <div class="form-group">
+                    <label for="destination">Destino</label>
+                    <input type="text" id="destination" name="destination" placeholder="Digite o destino" required>
+                </div>
+                <div class="form-group">
+                    <label for="startDate">Data de Início</label>
+                    <input type="date" id="startDate" name="startDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="endDate">Data de Fim</label>
+                    <input type="date" id="endDate" name="endDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="travelers">Número de Viajantes</label>
+                    <input type="number" id="travelers" name="travelers" min="1" max="20" placeholder="Quantidade" required>
+                </div>
+                <div class="form-group">
+                    <label for="budget">Orçamento (R$)</label>
+                    <input type="number" id="budget" name="budget" min="0" placeholder="Valor total" required>
+                </div>
+                <div class="form-group">
+                    <label for="interests">Interesses</label>
+                    <select id="interests" name="interests" required>
+                        <option value="">Selecione seus interesses</option>
+                        <option value="cultural">Cultural</option>
+                        <option value="natureza">Natureza</option>
+                        <option value="gastronomia">Gastronomia</option>
+                        <option value="aventura">Aventura</option>
+                        <option value="shopping">Shopping</option>
+                        <option value="relaxamento">Relaxamento</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="accommodation">Tipo de Hospedagem</label>
+                    <select id="accommodation" name="accommodation" required>
+                        <option value="">Selecione o tipo</option>
+                        <option value="hotel">Hotel</option>
+                        <option value="hostel">Hostel</option>
+                        <option value="apartamento">Apartamento</option>
+                        <option value="pousada">Pousada</option>
+                    </select>
+                </div>
+                <div class="form-group full-width">
+                    <label for="description">Descrição do Roteiro</label>
+                    <textarea id="description" name="description" placeholder="Descreva o que você gostaria de fazer durante a viagem..."></textarea>
+                </div>
+                <button type="submit" class="create-btn">Criar Roteiro</button>
+            </form>
+        </section>
+
+        <section class="popular-itineraries">
+            <h2>Roteiros Populares</h2>
+            <div class="itineraries-grid">
+                <article class="itinerary-card">
+                    <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=600&q=80" alt="Rio de Janeiro">
+                    <div class="itinerary-content">
+                        <h3>Rio de Janeiro Completo</h3>
+                        <p>Roteiro de 3 dias pelos principais pontos turísticos do Rio de Janeiro.</p>
+                        <div class="itinerary-stats">
+                            <span class="itinerary-duration">3 dias</span>
+                            <span class="itinerary-rating">⭐ 4.8</span>
+                        </div>
+                        <div class="itinerary-tags">
+                            <span class="itinerary-tag">Cultural</span>
+                            <span class="itinerary-tag">Praia</span>
+                            <span class="itinerary-tag">Vista</span>
+                        </div>
+                        <div class="itinerary-actions">
+                            <a href="#" class="btn-view">Ver Detalhes</a>
+                            <button class="btn-save">Salvar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="itinerary-card">
+                    <img src="https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f?auto=format&fit=crop&w=600&q=80" alt="São Paulo">
+                    <div class="itinerary-content">
+                        <h3>São Paulo Gastronômico</h3>
+                        <p>Roteiro de 2 dias focado na gastronomia paulistana e cultura urbana.</p>
+                        <div class="itinerary-stats">
+                            <span class="itinerary-duration">2 dias</span>
+                            <span class="itinerary-rating">⭐ 4.6</span>
+                        </div>
+                        <div class="itinerary-tags">
+                            <span class="itinerary-tag">Gastronomia</span>
+                            <span class="itinerary-tag">Cultural</span>
+                            <span class="itinerary-tag">Urbano</span>
+                        </div>
+                        <div class="itinerary-actions">
+                            <a href="#" class="btn-view">Ver Detalhes</a>
+                            <button class="btn-save">Salvar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="itinerary-card">
+                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=600&q=80" alt="Curitiba">
+                    <div class="itinerary-content">
+                        <h3>Curitiba Sustentável</h3>
+                        <p>Roteiro de 2 dias explorando a capital mais verde do Brasil.</p>
+                        <div class="itinerary-stats">
+                            <span class="itinerary-duration">2 dias</span>
+                            <span class="itinerary-rating">⭐ 4.7</span>
+                        </div>
+                        <div class="itinerary-tags">
+                            <span class="itinerary-tag">Natureza</span>
+                            <span class="itinerary-tag">Sustentável</span>
+                            <span class="itinerary-tag">Parques</span>
+                        </div>
+                        <div class="itinerary-actions">
+                            <a href="#" class="btn-view">Ver Detalhes</a>
+                            <button class="btn-save">Salvar</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="itinerary-table-section">
+            <h2>Meus Roteiros</h2>
+            <table class="itinerary-table">
+                <thead>
+                    <tr>
+                        <th>Nome do Roteiro</th>
+                        <th>Destino</th>
+                        <th>Duração</th>
+                        <th>Orçamento</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rio de Janeiro Completo</td>
+                        <td>Rio de Janeiro, RJ</td>
+                        <td>3 dias</td>
+                        <td>R$ 1.500,00</td>
+                        <td><span class="status-active">Ativo</span></td>
+                        <td>
+                            <a href="#" class="btn-view">Editar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fim de Semana em SP</td>
+                        <td>São Paulo, SP</td>
+                        <td>2 dias</td>
+                        <td>R$ 800,00</td>
+                        <td><span class="status-draft">Rascunho</span></td>
+                        <td>
+                            <a href="#" class="btn-view">Editar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Curitiba Verde</td>
+                        <td>Curitiba, PR</td>
+                        <td>2 dias</td>
+                        <td>R$ 600,00</td>
+                        <td><span class="status-active">Ativo</span></td>
+                        <td>
+                            <a href="#" class="btn-view">Editar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Salvador Histórica</td>
+                        <td>Salvador, BA</td>
+                        <td>4 dias</td>
+                        <td>R$ 1.200,00</td>
+                        <td><span class="status-draft">Rascunho</span></td>
+                        <td>
+                            <a href="#" class="btn-view">Editar</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo-section">
+                <img src="../images/LOGO.png" alt="Logo Staysplore Rodapé" class="footer-logo-img" onerror="this.style.display='none'; this.parentElement.insertAdjacentHTML('afterbegin', '<div style=\'font-size:24px; font-weight:bold; color:black; margin-bottom:15px;\'>STAYSPLORE</div>');">
+                <div class="logo-subtitle-text">
+                    WWW.STAYSPLORE.COM.BR <br/>
+                    SEU MELHOR AMIGO EM VIAGENS!
+                </div>
+                <div class="footer-social-icons">
+                    <a href="#" class="footer-icon-f" aria-label="Facebook"></a>
+                    <a href="#" class="footer-icon-in" aria-label="LinkedIn"></a>
+                    <a href="#" class="footer-icon-yt" aria-label="YouTube"></a>
+                    <a href="#" class="footer-icon-ig" aria-label="Instagram"></a>
+                </div>
+            </div>
+            <div class="footer-links-section">
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Contato</h4>
+                    <ul>
+                        <li><a href="../contact/index.html">Email</a></li>
+                        <li><a href="../contact/index.html">Telefone</a></li>
+                        <li><a href="../contact/index.html">Instagram</a></li>
+                        <li><a href="../contact/index.html">Marcar horário</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Outros</h4>
+                    <ul>
+                        <li><a href="../about/index.html">Sobre nós</a></li>
+                        <li><a href="../about/index.html">Trabalhe conosco</a></li>
+                        <li><a href="../about/index.html">Vagas</a></li>
+                        <li><a href="../about/index.html">Admin</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Início</h4>
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="../hotels/hotels.html">Hotéis</a></li>
+                        <li><a href="../attractions/index.html">Atrações</a></li>
+                        <li><a href="index.html">Roteiros</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Validação do formulário de criação de roteiro
+        document.getElementById('itineraryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const itineraryName = document.getElementById('itineraryName').value.trim();
+            const destination = document.getElementById('destination').value.trim();
+            const startDate = document.getElementById('startDate').value;
+            const endDate = document.getElementById('endDate').value;
+            const travelers = document.getElementById('travelers').value;
+            const budget = document.getElementById('budget').value;
+            const interests = document.getElementById('interests').value;
+            const accommodation = document.getElementById('accommodation').value;
+            
+            // Validação de campos vazios
+            if (!itineraryName) {
+                alert('Por favor, preencha o nome do roteiro');
+                document.getElementById('itineraryName').focus();
+                return;
+            }
+            
+            if (!destination) {
+                alert('Por favor, preencha o destino');
+                document.getElementById('destination').focus();
+                return;
+            }
+            
+            if (!startDate) {
+                alert('Por favor, selecione a data de início');
+                document.getElementById('startDate').focus();
+                return;
+            }
+            
+            if (!endDate) {
+                alert('Por favor, selecione a data de fim');
+                document.getElementById('endDate').focus();
+                return;
+            }
+            
+            if (!travelers || travelers < 1 || travelers > 20) {
+                alert('Por favor, insira um número válido de viajantes (1-20)');
+                document.getElementById('travelers').focus();
+                return;
+            }
+            
+            if (!budget || budget < 0) {
+                alert('Por favor, insira um orçamento válido');
+                document.getElementById('budget').focus();
+                return;
+            }
+            
+            if (!interests) {
+                alert('Por favor, selecione seus interesses');
+                document.getElementById('interests').focus();
+                return;
+            }
+            
+            if (!accommodation) {
+                alert('Por favor, selecione o tipo de hospedagem');
+                document.getElementById('accommodation').focus();
+                return;
+            }
+            
+            // Validação de datas
+            if (new Date(startDate) >= new Date(endDate)) {
+                alert('A data de fim deve ser posterior à data de início');
+                document.getElementById('endDate').focus();
+                return;
+            }
+            
+            // Se todos os campos estão preenchidos, simula o envio
+            alert('Roteiro criado com sucesso! Você será redirecionado para a página de detalhes.');
+        });
+    </script>
+</body>
+</html> 

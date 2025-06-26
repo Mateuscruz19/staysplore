@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil - Staysplore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="header-logo">
+            <img src="../images/LOGO.png" alt="Staysplore" onerror="this.style.display='none'; this.parentElement.innerHTML = 'STAYSPLORE';">
+        </a>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../hotels/hotels.html">Hotéis</a></li>
+                <li><a href="../attractions/index.html">Atrações</a></li>
+                <li><a href="../itineraries/index.html">Roteiros</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="../sign-in/login.html" class="btn btn-login">Login</a>
+            <a href="../sign-up/register.html" class="btn btn-signup">Cadastrar-se</a>
+            <div class="header-user-icon">
+                <span>U</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="page-title">
+            <h1>Meu Perfil</h1>
+            <p>Gerencie suas informações pessoais e reservas</p>
+        </div>
+
+        <div class="profile-container">
+            <aside class="profile-sidebar">
+                <div class="profile-avatar">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80" alt="Foto do Perfil">
+                    <h3>João Silva</h3>
+                    <p>Membro desde 2023</p>
+                </div>
+
+                <div class="profile-stats">
+                    <div class="stat-item">
+                        <h4>12</h4>
+                        <p>Viagens</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>8</h4>
+                        <p>Favoritos</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>4.8</h4>
+                        <p>Avaliação</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Gold</h4>
+                        <p>Status</p>
+                    </div>
+                </div>
+
+                <nav class="profile-menu">
+                    <ul>
+                        <li><a href="#personal-info" class="active">Informações Pessoais</a></li>
+                        <li><a href="#reservations">Minhas Reservas</a></li>
+                        <li><a href="#favorites">Favoritos</a></li>
+                        <li><a href="#preferences">Preferências</a></li>
+                        <li><a href="#security">Segurança</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <main class="profile-content">
+                <section id="personal-info" class="profile-section">
+                    <h3>Informações Pessoais</h3>
+                    <form class="profile-form" id="personalInfoForm">
+                        <div class="form-group">
+                            <label for="firstName">Nome</label>
+                            <input type="text" id="firstName" name="firstName" value="João" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Sobrenome</label>
+                            <input type="text" id="lastName" name="lastName" value="Silva" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" value="joao.silva@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone" value="(11) 99999-9999" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="birthDate">Data de Nascimento</label>
+                            <input type="date" id="birthDate" name="birthDate" value="1990-05-15" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="document">CPF</label>
+                            <input type="text" id="document" name="document" value="123.456.789-00" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="address">Endereço</label>
+                            <textarea id="address" name="address" rows="3">Rua das Flores, 123 - Centro, São Paulo - SP, 01234-567</textarea>
+                        </div>
+                        <button type="submit" class="save-btn">Salvar Alterações</button>
+                    </form>
+                </section>
+
+                <section id="reservations" class="profile-section">
+                    <h3>Minhas Reservas</h3>
+                    <table class="reservations-table">
+                        <thead>
+                            <tr>
+                                <th>Hotel</th>
+                                <th>Destino</th>
+                                <th>Check-in</th>
+                                <th>Check-out</th>
+                                <th>Status</th>
+                                <th>Valor</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Hotel Copacabana Palace</td>
+                                <td>Rio de Janeiro</td>
+                                <td>15/12/2024</td>
+                                <td>18/12/2024</td>
+                                <td><span class="reservation-status status-confirmed">Confirmada</span></td>
+                                <td>R$ 1.200,00</td>
+                                <td>
+                                    <button class="action-btn">Ver Detalhes</button>
+                                    <button class="action-btn cancel">Cancelar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Grand Hyatt São Paulo</td>
+                                <td>São Paulo</td>
+                                <td>20/01/2025</td>
+                                <td>22/01/2025</td>
+                                <td><span class="reservation-status status-pending">Pendente</span></td>
+                                <td>R$ 800,00</td>
+                                <td>
+                                    <button class="action-btn">Ver Detalhes</button>
+                                    <button class="action-btn cancel">Cancelar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Hotel Fasano</td>
+                                <td>São Paulo</td>
+                                <td>10/11/2024</td>
+                                <td>12/11/2024</td>
+                                <td><span class="reservation-status status-cancelled">Cancelada</span></td>
+                                <td>R$ 1.500,00</td>
+                                <td>
+                                    <button class="action-btn">Ver Detalhes</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section id="favorites" class="profile-section">
+                    <h3>Meus Favoritos</h3>
+                    <div class="favorites-grid">
+                        <div class="favorite-item">
+                            <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=400&q=80" alt="Cristo Redentor">
+                            <div class="favorite-content">
+                                <h4>Cristo Redentor</h4>
+                                <p>Rio de Janeiro, RJ</p>
+                                <div class="favorite-actions">
+                                    <button>Ver Detalhes</button>
+                                    <button class="remove">Remover</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="favorite-item">
+                            <img src="https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f?auto=format&fit=crop&w=400&q=80" alt="Pão de Açúcar">
+                            <div class="favorite-content">
+                                <h4>Pão de Açúcar</h4>
+                                <p>Rio de Janeiro, RJ</p>
+                                <div class="favorite-actions">
+                                    <button>Ver Detalhes</button>
+                                    <button class="remove">Remover</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="favorite-item">
+                            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=400&q=80" alt="Copacabana">
+                            <div class="favorite-content">
+                                <h4>Praia de Copacabana</h4>
+                                <p>Rio de Janeiro, RJ</p>
+                                <div class="favorite-actions">
+                                    <button>Ver Detalhes</button>
+                                    <button class="remove">Remover</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="favorite-item">
+                            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=400&q=80" alt="Hotel">
+                            <div class="favorite-content">
+                                <h4>Hotel Copacabana Palace</h4>
+                                <p>Rio de Janeiro, RJ</p>
+                                <div class="favorite-actions">
+                                    <button>Ver Detalhes</button>
+                                    <button class="remove">Remover</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="preferences" class="profile-section">
+                    <h3>Preferências de Viagem</h3>
+                    <form class="profile-form" id="preferencesForm">
+                        <div class="form-group">
+                            <label for="preferredDestination">Destino Preferido</label>
+                            <select id="preferredDestination" name="preferredDestination">
+                                <option value="">Selecione um destino</option>
+                                <option value="rio" selected>Rio de Janeiro</option>
+                                <option value="sp">São Paulo</option>
+                                <option value="curitiba">Curitiba</option>
+                                <option value="salvador">Salvador</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="accommodationType">Tipo de Hospedagem</label>
+                            <select id="accommodationType" name="accommodationType">
+                                <option value="">Selecione o tipo</option>
+                                <option value="hotel" selected>Hotel</option>
+                                <option value="hostel">Hostel</option>
+                                <option value="apartment">Apartamento</option>
+                                <option value="pousada">Pousada</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budgetRange">Faixa de Orçamento</label>
+                            <select id="budgetRange" name="budgetRange">
+                                <option value="">Selecione a faixa</option>
+                                <option value="low">Até R$ 500</option>
+                                <option value="medium" selected>R$ 500 - R$ 1.500</option>
+                                <option value="high">Acima de R$ 1.500</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="travelStyle">Estilo de Viagem</label>
+                            <select id="travelStyle" name="travelStyle">
+                                <option value="">Selecione o estilo</option>
+                                <option value="cultural">Cultural</option>
+                                <option value="adventure" selected>Aventura</option>
+                                <option value="relaxation">Relaxamento</option>
+                                <option value="business">Negócios</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="specialRequests">Solicitações Especiais</label>
+                            <textarea id="specialRequests" name="specialRequests" rows="3" placeholder="Alguma preferência especial ou necessidade específica..."></textarea>
+                        </div>
+                        <button type="submit" class="save-btn">Salvar Preferências</button>
+                    </form>
+                </section>
+
+                <section id="security" class="profile-section">
+                    <h3>Segurança da Conta</h3>
+                    <form class="profile-form" id="securityForm">
+                        <div class="form-group">
+                            <label for="currentPassword">Senha Atual</label>
+                            <input type="password" id="currentPassword" name="currentPassword" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="newPassword">Nova Senha</label>
+                            <input type="password" id="newPassword" name="newPassword" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirmar Nova Senha</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label>
+                                <input type="checkbox" id="twoFactor" name="twoFactor">
+                                Ativar autenticação de dois fatores
+                            </label>
+                        </div>
+                        <button type="submit" class="save-btn">Alterar Senha</button>
+                    </form>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo-section">
+                <img src="../images/LOGO.png" alt="Logo Staysplore Rodapé" class="footer-logo-img" onerror="this.style.display='none'; this.parentElement.insertAdjacentHTML('afterbegin', '<div style=\'font-size:24px; font-weight:bold; color:black; margin-bottom:15px;\'>STAYSPLORE</div>');">
+                <div class="logo-subtitle-text">
+                    WWW.STAYSPLORE.COM.BR <br/>
+                    SEU MELHOR AMIGO EM VIAGENS!
+                </div>
+                <div class="footer-social-icons">
+                    <a href="#" class="footer-icon-f" aria-label="Facebook"></a>
+                    <a href="#" class="footer-icon-in" aria-label="LinkedIn"></a>
+                    <a href="#" class="footer-icon-yt" aria-label="YouTube"></a>
+                    <a href="#" class="footer-icon-ig" aria-label="Instagram"></a>
+                </div>
+            </div>
+            <div class="footer-links-section">
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Contato</h4>
+                    <ul>
+                        <li><a href="../contact/index.html">Email</a></li>
+                        <li><a href="../contact/index.html">Telefone</a></li>
+                        <li><a href="../contact/index.html">Instagram</a></li>
+                        <li><a href="../contact/index.html">Marcar horário</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Outros</h4>
+                    <ul>
+                        <li><a href="../about/index.html">Sobre nós</a></li>
+                        <li><a href="../about/index.html">Trabalhe conosco</a></li>
+                        <li><a href="../about/index.html">Vagas</a></li>
+                        <li><a href="../about/index.html">Admin</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Início</h4>
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="../hotels/hotels.html">Hotéis</a></li>
+                        <li><a href="../attractions/index.html">Atrações</a></li>
+                        <li><a href="../itineraries/index.html">Roteiros</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Validação do formulário de informações pessoais
+        document.getElementById('personalInfoForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const firstName = document.getElementById('firstName').value.trim();
+            const lastName = document.getElementById('lastName').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            
+            if (!firstName || !lastName || !email || !phone) {
+                alert('Por favor, preencha todos os campos obrigatórios');
+                return;
+            }
+            
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Por favor, insira um e-mail válido');
+                document.getElementById('email').focus();
+                return;
+            }
+            
+            alert('Informações pessoais atualizadas com sucesso!');
+        });
+
+        // Validação do formulário de segurança
+        document.getElementById('securityForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const currentPassword = document.getElementById('currentPassword').value;
+            const newPassword = document.getElementById('newPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            
+            if (!currentPassword || !newPassword || !confirmPassword) {
+                alert('Por favor, preencha todos os campos');
+                return;
+            }
+            
+            if (newPassword.length < 8) {
+                alert('A nova senha deve ter pelo menos 8 caracteres');
+                document.getElementById('newPassword').focus();
+                return;
+            }
+            
+            if (newPassword !== confirmPassword) {
+                alert('As senhas não coincidem');
+                document.getElementById('confirmPassword').focus();
+                return;
+            }
+            
+            alert('Senha alterada com sucesso!');
+            document.getElementById('securityForm').reset();
+        });
+
+        // Simulação de ações nas reservas
+        document.querySelectorAll('.action-btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const action = this.textContent.trim();
+                const hotelName = this.closest('tr').querySelector('td:first-child').textContent;
+                
+                if (action === 'Cancelar') {
+                    if (confirm(`Tem certeza que deseja cancelar a reserva no ${hotelName}?`)) {
+                        alert('Reserva cancelada com sucesso!');
+                    }
+                } else {
+                    alert(`Detalhes da reserva no ${hotelName} serão exibidos.`);
+                }
+            });
+        });
+
+        // Simulação de remoção de favoritos
+        document.querySelectorAll('.favorite-actions .remove').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const itemName = this.closest('.favorite-item').querySelector('h4').textContent;
+                if (confirm(`Tem certeza que deseja remover "${itemName}" dos favoritos?`)) {
+                    this.closest('.favorite-item').remove();
+                    alert('Item removido dos favoritos!');
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Staysplore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="header-logo">
+            <img src="../images/LOGO.png" alt="Staysplore" onerror="this.style.display='none'; this.parentElement.innerHTML = 'STAYSPLORE';">
+        </a>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../hotels/hotels.html">Hotéis</a></li>
+                <li><a href="../attractions/index.html">Atrações</a></li>
+                <li><a href="../itineraries/index.html">Roteiros</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="../sign-in/login.html" class="btn btn-login">Login</a>
+            <a href="../sign-up/register.html" class="btn btn-signup">Cadastrar-se</a>
+            <div class="header-user-icon">
+                <span>U</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="page-title">
+            <h1>Entre em Contato</h1>
+            <p>Estamos aqui para ajudar você a planejar sua viagem perfeita</p>
+        </div>
+
+        <div class="contact-container">
+            <section class="contact-form-section">
+                <h2>Envie uma Mensagem</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(11) 99999-9999" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Assunto</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Selecione um assunto</option>
+                            <option value="reserva">Dúvida sobre Reserva</option>
+                            <option value="pagamento">Problema com Pagamento</option>
+                            <option value="cancelamento">Cancelamento</option>
+                            <option value="sugestao">Sugestão</option>
+                            <option value="reclamacao">Reclamação</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="priority">Prioridade</label>
+                        <select id="priority" name="priority" required>
+                            <option value="">Selecione a prioridade</option>
+                            <option value="baixa">Baixa</option>
+                            <option value="media">Média</option>
+                            <option value="alta">Alta</option>
+                            <option value="urgente">Urgente</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" placeholder="Descreva sua dúvida ou solicitação..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                </form>
+            </section>
+
+            <div class="contact-info-section">
+                <section class="contact-methods">
+                    <h2>Formas de Contato</h2>
+                    <div class="contact-method">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>E-mail</h4>
+                            <p><a href="mailto:contato@staysplore.com.br">contato@staysplore.com.br</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h4>Telefone</h4>
+                            <p><a href="tel:+5511999999999">(11) 99999-9999</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">💬</div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/5511999999999">(11) 99999-9999</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Endereço</h4>
+                            <p>Rua das Viagens, 123<br>São Paulo - SP, 01234-567</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="faq-section">
+                    <h2>Perguntas Frequentes</h2>
+                    <div class="faq-item">
+                        <div class="faq-question">Como faço para cancelar uma reserva?</div>
+                        <div class="faq-answer">Você pode cancelar sua reserva através do seu perfil no site ou entrando em contato conosco pelo telefone ou e-mail.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Qual é a política de reembolso?</div>
+                        <div class="faq-answer">O reembolso depende da política de cada hotel. Geralmente, cancelamentos com até 24h de antecedência são reembolsados integralmente.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Posso alterar as datas da minha reserva?</div>
+                        <div class="faq-answer">Sim, você pode alterar as datas através do seu perfil ou entrando em contato conosco. Sujeito à disponibilidade do hotel.</div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <section class="contact-table-section">
+            <h2>Departamentos de Atendimento</h2>
+            <table class="contact-table">
+                <thead>
+                    <tr>
+                        <th>Departamento</th>
+                        <th>E-mail</th>
+                        <th>Telefone</th>
+                        <th>Horário de Atendimento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Reservas</td>
+                        <td class="department-email">reservas@staysplore.com.br</td>
+                        <td class="department-phone">(11) 99999-0001</td>
+                        <td>24h</td>
+                    </tr>
+                    <tr>
+                        <td>Suporte Técnico</td>
+                        <td class="department-email">suporte@staysplore.com.br</td>
+                        <td class="department-phone">(11) 99999-0002</td>
+                        <td>8h às 18h</td>
+                    </tr>
+                    <tr>
+                        <td>Financeiro</td>
+                        <td class="department-email">financeiro@staysplore.com.br</td>
+                        <td class="department-phone">(11) 99999-0003</td>
+                        <td>9h às 17h</td>
+                    </tr>
+                    <tr>
+                        <td>Marketing</td>
+                        <td class="department-email">marketing@staysplore.com.br</td>
+                        <td class="department-phone">(11) 99999-0004</td>
+                        <td>9h às 18h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo-section">
+                <img src="../images/LOGO.png" alt="Logo Staysplore Rodapé" class="footer-logo-img" onerror="this.style.display='none'; this.parentElement.insertAdjacentHTML('afterbegin', '<div style=\'font-size:24px; font-weight:bold; color:black; margin-bottom:15px;\'>STAYSPLORE</div>');">
+                <div class="logo-subtitle-text">
+                    WWW.STAYSPLORE.COM.BR <br/>
+                    SEU MELHOR AMIGO EM VIAGENS!
+                </div>
+                <div class="footer-social-icons">
+                    <a href="#" class="footer-icon-f" aria-label="Facebook"></a>
+                    <a href="#" class="footer-icon-in" aria-label="LinkedIn"></a>
+                    <a href="#" class="footer-icon-yt" aria-label="YouTube"></a>
+                    <a href="#" class="footer-icon-ig" aria-label="Instagram"></a>
+                </div>
+            </div>
+            <div class="footer-links-section">
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Contato</h4>
+                    <ul>
+                        <li><a href="index.html">Email</a></li>
+                        <li><a href="index.html">Telefone</a></li>
+                        <li><a href="index.html">Instagram</a></li>
+                        <li><a href="index.html">Marcar horário</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Outros</h4>
+                    <ul>
+                        <li><a href="../about/index.html">Sobre nós</a></li>
+                        <li><a href="../about/index.html">Trabalhe conosco</a></li>
+                        <li><a href="../about/index.html">Vagas</a></li>
+                        <li><a href="../about/index.html">Admin</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Início</h4>
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="../hotels/hotels.html">Hotéis</a></li>
+                        <li><a href="../attractions/index.html">Atrações</a></li>
+                        <li><a href="../itineraries/index.html">Roteiros</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Validação do formulário de contato
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const subject = document.getElementById('subject').value;
+            const priority = document.getElementById('priority').value;
+            const message = document.getElementById('message').value.trim();
+            
+            // Validação de campos vazios
+            if (!name) {
+                alert('Por favor, preencha seu nome');
+                document.getElementById('name').focus();
+                return;
+            }
+            
+            if (!email) {
+                alert('Por favor, preencha seu e-mail');
+                document.getElementById('email').focus();
+                return;
+            }
+            
+            // Validação de e-mail
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Por favor, insira um e-mail válido');
+                document.getElementById('email').focus();
+                return;
+            }
+            
+            if (!phone) {
+                alert('Por favor, preencha seu telefone');
+                document.getElementById('phone').focus();
+                return;
+            }
+            
+            if (!subject) {
+                alert('Por favor, selecione um assunto');
+                document.getElementById('subject').focus();
+                return;
+            }
+            
+            if (!priority) {
+                alert('Por favor, selecione a prioridade');
+                document.getElementById('priority').focus();
+                return;
+            }
+            
+            if (!message) {
+                alert('Por favor, preencha a mensagem');
+                document.getElementById('message').focus();
+                return;
+            }
+            
+            if (message.length < 10) {
+                alert('A mensagem deve ter pelo menos 10 caracteres');
+                document.getElementById('message').focus();
+                return;
+            }
+            
+            // Se todos os campos estão preenchidos, simula o envio
+            alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+            document.getElementById('contactForm').reset();
+        });
+    </script>
+</body>
+</html> 
