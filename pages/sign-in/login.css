@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #291818;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+.login-container {
+    display: flex;
+    background-color: #ffffff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+}
+.login-image-section {
+    flex: 1.2;
+    background-image: url('../images/cadastro-image.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 550px;
+}
+.login-form-section {
+    flex: 1;
+    padding: 40px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login-form-section .form-group {
+    margin-bottom: 22px;
+}
+.login-form-section label {
+    display: block;
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+.login-form-section input[type="email"],
+.login-form-section input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.login-form-section input[type="email"]:focus,
+.login-form-section input[type="password"]:focus {
+    border-color: #1E2450;
+    box-shadow: 0 0 0 2px rgba(30, 36, 80, 0.2);
+    outline: none;
+}
+.login-form-section .forgot-password {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    color: #1E2450;
+    text-decoration: none;
+    margin-top: -12px;
+    margin-bottom: 22px;
+}
+.login-form-section .forgot-password:hover {
+    text-decoration: underline;
+}
+.login-form-section .btn-submit-form {
+    width: 100%;
+    padding: 14px;
+    background-color: #291818;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.login-form-section .btn-submit-form:hover {
+    background-color: #291818;
+}
+.social-login-divider {
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+    margin: 30px 0;
+    position: relative;
+}
+.social-login-divider::before,
+.social-login-divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 38%;
+    height: 1px;
+    background-color: #ddd;
+}
+.social-login-divider::before { left: 0; }
+.social-login-divider::after { right: 0; }
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+.social-icon {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    font-size: 20px;
+    color: #555;
+}
+.social-icon:hover {
+    background-color: #f5f5f5;
+    border-color: #ccc;
+}
+.icon-g::before { content: "G"; font-weight: bold; }
+.icon-f::before { content: "f"; font-weight: bold; font-family: 'Times New Roman', Times, serif; }
+.signup-link {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+.signup-link a {
+    color: #1E2450;
+    text-decoration: none;
+    font-weight: bold;
+}
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+    .main-content {
+        padding-top: 20px;
+    }
+}
+@media (max-width: 860px) {
+    .login-container {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .login-image-section {
+        min-height: 280px;
+    }
+    .login-form-section {
+        padding: 30px 25px;
+    }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 480px) {
+    .main-content {
+        padding: 20px 15px;
+    }
+    .login-form-section input[type="email"],
+    .login-form-section input[type="password"] {
+        padding: 12px 10px;
+    }
+} 

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Staysplore</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="../../index.html" class="header-logo">
+            <img src="../../images/LOGO.png" alt="Staysplore" onerror="this.style.display='none'; this.parentElement.innerHTML = 'STAYSPLORE';">
+        </a>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="../hotels/hotels.html">Hotéis</a></li>
+                <li><a href="../attractions/index.html">Atrações</a></li>
+                <li><a href="../itineraries/index.html">Roteiros</a></li>
+                <li><a href="../blog/index.html">Blog</a></li>
+                <li><a href="index.html" class="active">FAQ</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="../sign-in/login.html" class="btn btn-login">Login</a>
+            <a href="../sign-up/register.html" class="btn btn-signup">Cadastrar-se</a>
+            <a href="../profile/index.html" class="header-user-icon">
+                <span>U</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="page-title">
+            <h1>Perguntas Frequentes (FAQ)</h1>
+            <p>Encontre respostas para as dúvidas mais comuns.</p>
+        </div>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3 class="faq-question">Como faço para realizar uma reserva?</h3>
+                <div class="faq-answer">
+                    <p>Para fazer uma reserva, basta buscar pelo destino desejado, escolher o hotel, selecionar as datas da sua estadia e clicar no botão "Reservar". Você será redirecionado para a página de pagamento para concluir a reserva.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Quais formas de pagamento são aceitas?</h3>
+                <div class="faq-answer">
+                    <p>Aceitamos as principais bandeiras de cartão de crédito (Visa, MasterCard, American Express) e também pagamentos via Pix. Todas as transações são seguras e criptografadas.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Posso cancelar ou alterar minha reserva?</h3>
+                <div class="faq-answer">
+                    <p>Sim. A política de cancelamento e alteração varia de acordo com o hotel. Você pode verificar as condições na página de detalhes do hotel antes de reservar. Para cancelar ou alterar, acesse "Minhas Reservas" no seu perfil.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Como funcionam os roteiros personalizados?</h3>
+                <div class="faq-answer">
+                    <p>Nossa ferramenta de roteiros permite que você adicione hotéis, atrações e restaurantes para criar um cronograma dia a dia. Você pode salvar seus roteiros, compartilhá-los e acessá-los durante sua viagem.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <h3 class="faq-question">Como entrar em contato com o suporte?</h3>
+                <div class="faq-answer">
+                    <p>Se você não encontrou a resposta para sua dúvida aqui, pode entrar em contato conosco através da nossa página de <a href="../contact/index.html">Contato</a>. Nossa equipe está disponível para ajudar!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo-section">
+                 <img src="../../images/LOGO.png" alt="Logo Staysplore Rodapé" class="footer-logo-img" onerror="this.style.display='none'; this.parentElement.insertAdjacentHTML('afterbegin', '<div style=\'font-size:24px; font-weight:bold; color:black; margin-bottom:15px;\'>STAYSPLORE</div>');">
+                <div class="logo-subtitle-text">
+                    WWW.STAYSPLORE.COM.BR <br/>
+                    SEU MELHOR AMIGO EM VIAGENS!
+                </div>
+                <div class="footer-social-icons">
+                    <a href="#" class="footer-icon-f" aria-label="Facebook"></a>
+                    <a href="#" class="footer-icon-in" aria-label="LinkedIn"></a>
+                    <a href="#" class="footer-icon-yt" aria-label="YouTube"></a>
+                    <a href="#" class="footer-icon-ig" aria-label="Instagram"></a>
+                </div>
+            </div>
+            <div class="footer-links-section">
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Contato</h4>
+                    <ul>
+                        <li><a href="../contact/index.html">Email</a></li>
+                        <li><a href="../contact/index.html">Telefone</a></li>
+                        <li><a href="../contact/index.html">Instagram</a></li>
+                        <li><a href="../contact/index.html">Marcar horário</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Outros</h4>
+                    <ul>
+                        <li><a href="../about/index.html">Sobre nós</a></li>
+                        <li><a href="../about/index.html">Admin</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Início</h4>
+                     <ul>
+                        <li><a href="../../index.html">Início</a></li>
+                        <li><a href="../hotels/hotels.html">Hotéis</a></li>
+                        <li><a href="../attractions/index.html">Atrações</a></li>
+                        <li><a href="../itineraries/index.html">Roteiros</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', event => {
+                const answer = item.nextElementSibling;
+                const parentItem = item.parentElement;
+                
+                parentItem.classList.toggle('active');
+
+                if (answer.style.maxHeight) {
+                    answer.style.maxHeight = null;
+                } else {
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                } 
+            });
+        });
+    </script>
+</body>
+</html> 

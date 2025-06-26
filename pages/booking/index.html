@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Hotel - Staysplore</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="../../index.html" class="header-logo">
+            <img src="../../images/LOGO.png" alt="Staysplore" onerror="this.style.display='none'; this.parentElement.innerHTML = 'STAYSPLORE';">
+        </a>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="../hotels/hotels.html">Hotéis</a></li>
+                <li><a href="../attractions/index.html">Atrações</a></li>
+                <li><a href="../itineraries/index.html">Roteiros</a></li>
+                <li><a href="../blog/index.html">Blog</a></li>
+                <li><a href="../faq/index.html">FAQ</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="../sign-in/login.html" class="btn btn-login">Login</a>
+            <a href="../sign-up/register.html" class="btn btn-signup">Cadastrar-se</a>
+            <a href="../profile/index.html" class="header-user-icon">
+                <span>U</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="page-title">
+            <h1>Reserva de Hotel</h1>
+            <p>Preencha os dados abaixo para confirmar sua reserva</p>
+        </div>
+
+        <div class="reservation-container">
+            <div class="hotel-details">
+                <h2>Detalhes do Hotel</h2>
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Hotel de Luxo" class="hotel-image">
+                <div class="hotel-info">
+                    <div class="hotel-info-item location">Luxury Resort</div>
+                    <div class="hotel-info-item rating">4.7 (Excelente)</div>
+                    <div class="hotel-info-item price">A partir de R$ 250</div>
+                    <div class="hotel-info-item amenities">Piscina, Spa e Mais</div>
+                </div>
+                <div class="hotel-amenities">
+                    <h3>Comodidades</h3>
+                    <div class="amenities-list">
+                        <span class="amenity-tag">Piscina</span>
+                        <span class="amenity-tag">Spa</span>
+                        <span class="amenity-tag">Restaurante</span>
+                        <span class="amenity-tag">Wi-Fi Grátis</span>
+                        <span class="amenity-tag">Estacionamento</span>
+                        <span class="amenity-tag">Academia</span>
+                    </div>
+                </div>
+            </div>
+
+            <form class="reservation-form">
+                <h2>Sua Reserva</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="check-in">Check-in</label>
+                        <input type="date" id="check-in" name="check-in" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="check-out">Check-out</label>
+                        <input type="date" id="check-out" name="check-out" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Hóspedes</label>
+                    <select id="guests" name="guests" required>
+                        <option value="1">1 Adulto</option>
+                        <option value="2">2 Adultos</option>
+                        <option value="3">3 Adultos</option>
+                        <option value="4">4 Adultos</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="special-requests">Pedidos Especiais</label>
+                    <textarea id="special-requests" name="special-requests" placeholder="Ex: andar alto, cama extra..."></textarea>
+                </div>
+                <div class="price-summary">
+                    <h3>Resumo do Preço</h3>
+                    <div class="price-item">
+                        <span>2 noites x R$ 250</span>
+                        <span>R$ 500</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Taxas e Impostos</span>
+                        <span>R$ 50</span>
+                    </div>
+                    <div class="price-total">
+                        <span>Total</span>
+                        <span>R$ 550</span>
+                    </div>
+                </div>
+                <div class="payment-options">
+                    <h3>Pagamento</h3>
+                    <div class="payment-method">
+                        <input type="radio" id="credit-card" name="payment" value="credit-card" checked>
+                        <label for="credit-card">Cartão de Crédito</label>
+                    </div>
+                    <div class="payment-method">
+                        <input type="radio" id="pix" name="payment" value="pix">
+                        <label for="pix">PIX</label>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">Confirmar Reserva</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo-section">
+                 <img src="../../images/LOGO.png" alt="Logo Staysplore Rodapé" class="footer-logo-img" onerror="this.style.display='none'; this.parentElement.insertAdjacentHTML('afterbegin', '<div style=\'font-size:24px; font-weight:bold; color:black; margin-bottom:15px;\'>STAYSPLORE</div>');">
+                <div class="logo-subtitle-text">
+                    WWW.STAYSPLORE.COM.BR <br/>
+                    SEU MELHOR AMIGO EM VIAGENS!
+                </div>
+                <div class="footer-social-icons">
+                    <a href="#" class="footer-icon-f" aria-label="Facebook"></a>
+                    <a href="#" class="footer-icon-in" aria-label="LinkedIn"></a>
+                    <a href="#" class="footer-icon-yt" aria-label="YouTube"></a>
+                    <a href="#" class="footer-icon-ig" aria-label="Instagram"></a>
+                </div>
+            </div>
+            <div class="footer-links-section">
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Contato</h4>
+                    <ul>
+                        <li><a href="../contact/index.html">Email</a></li>
+                        <li><a href="../contact/index.html">Telefone</a></li>
+                        <li><a href="../contact/index.html">Instagram</a></li>
+                        <li><a href="../contact/index.html">Marcar horário</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Outros</h4>
+                    <ul>
+                        <li><a href="../about/index.html">Sobre nós</a></li>
+                        <li><a href="../about/index.html">Admin</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Início</h4>
+                     <ul>
+                        <li><a href="../../index.html">Início</a></li>
+                        <li><a href="../hotels/hotels.html">Hotéis</a></li>
+                        <li><a href="../attractions/index.html">Atrações</a></li>
+                        <li><a href="../itineraries/index.html">Roteiros</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

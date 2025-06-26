@@ -1,0 +1,128 @@
+.main-content {
+    flex-grow: 1;
+    padding: 40px 50px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-title h1 {
+    font-size: 36px;
+    color: #1E2450;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    font-size: 18px;
+    color: #666;
+}
+
+.about-section {
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.about-section h2 {
+    color: #1E2450;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.about-section p {
+    color: #666;
+    line-height: 1.8;
+    font-size: 16px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.about-section p:last-child {
+    margin-bottom: 0;
+}
+
+.mission-vision-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.mission-card,
+.vision-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.mission-card h3,
+.vision-card h3 {
+    color: #1E2450;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.mission-card p,
+.vision-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.values-section {
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.values-section h2 {
+    color: #1E2450;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.value-item {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.value-item h4 {
+    color: #1E2450;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.value-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 30px 20px;
+    }
+
+    .mission-vision-section {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+} 
